@@ -1,6 +1,6 @@
 <?php
 session_start();
-$koneksi = mysqli_connect("localhost", "root", "", "database_gudang");
+$koneksi = mysqli_connect("localhost", "root", "root", "database_gudang");
 $email = $_POST["email"];
 $password = $_POST["password"];
 $query = mysqli_query($koneksi, "SELECT * FROM admin WHERE email='$email' AND password='$password'")
